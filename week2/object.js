@@ -5,7 +5,7 @@
 
 const table = {
     noOfLegs: 4,
-    color: 'white', 
+    color: 'white',  
     material:'pastic',
     isFoldable:true,
 }
@@ -28,18 +28,30 @@ television['maker'] = 'Startimes'
 table['coloroflegs']= 'grey';
 table['width'] = 1.2;
 // console.log(table.coloroflegs + '\n ' + table.material +  '\n ' + table.width)
-
+const allObjects = {}
 for (item in table){
-    console.log(table[item]);
+    // console.log(table[item]);
+    allObjects[item] = table[item];
 }
 console.log('\n\n')
 
 for (properties in fan){
-    console.log(fan[properties])
+    // console.log(fan[properties]);
+    allObjects[properties] = fan[properties];
 }
 
 console.log('\n\n')
 
 for (item in television){
-    console.log(television[item])
+    // console.log(television[item]);
+    allObjects[item] = television[item];
 }
+
+console.log(allObjects)
+
+const bible = {}
+bible['version'] = 'NIV';
+bible['numOfbooksInBook'] = 66;
+bible['part'] = 'New testament & Old testament';
+console.log(bible)
+
